@@ -59,7 +59,7 @@ Both Mac and iPhones have system wide features that they default to when force c
 ## Example
 If you want to implement 3D touch on your component you can do something like this:
 
-```
+```jsx
 import React, { Component } from 'react';
 import Pressure from 'react-pressure';
 
@@ -81,7 +81,7 @@ export default Pressure(MyGreatComponent);
 ```
 
 By default all components have the configuration: 
-```
+```jsx
 {
   polyfill: true,
   polyfillSpeedUp: 1000,
@@ -91,7 +91,7 @@ By default all components have the configuration:
 }
 ```
 If you want to add some configurations you can modify the last part from the previous code and write something like this:(You can override some,none or all of the configurations)
-```
+```jsx
 //Now this changed
 const configs = {
   polyfill: false, //Only people with 3D touch
@@ -101,7 +101,7 @@ export default Pressure(MyGreatComponent,configs) ;
 ```
 
 If you are using react-redux you can do something like:
-```
+```jsx
 export default connect(mapStateToProps,mapDispatchToProps)( Pressure(MyGreatComponent) );
 ```
 
