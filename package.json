@@ -1,6 +1,6 @@
 {
   "name": "react-pressure",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wrapper of https://pressurejs.com/ as HOC",
   "main": "build/index.js",
   "repository": {
