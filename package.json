@@ -1,0 +1,47 @@
+{
+  "name": "react-pressure",
+  "version": "0.1.0",
+  "description": "Wrapper of https://pressurejs.com/ as HOC",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rubcuadra/react-pressure"
+  },
+  "keywords": [
+    "react",
+    "3d",
+    "touch",
+    "pressure"
+  ],
+  "author": {
+    "name": "Ruben Cuadra",
+    "email": "rubcuadra@gmail.com",
+    "url": "http://github.com/rubcuadra"
+  },
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "pressure": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "compression-webpack-plugin": "^1.0.0",
+    "webpack": "^2.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/rubcuadra/react-pressure/issues"
+  },
+  "homepage": "https://github.com/rubcuadra/react-pressure#readme"
+}
