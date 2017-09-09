@@ -90,7 +90,7 @@ By default all components have the configuration:
   only: null
 }
 ```
-If you want to add some configurations you can modify the last part from the previous code and write something like this:(You can modify some, all or none of the)
+If you want to add some configurations you can modify the last part from the previous code and write something like this:(You can override some,none or all of the configurations)
 ```
 //Now this changed
 const configs = {
