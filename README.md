@@ -100,4 +100,9 @@ const configs = {
 export default Pressure(MyGreatComponent,configs) ;
 ```
 
+If you are using react-redux you can do something like:
+```
+export default connect(mapStateToProps,mapDispatchToProps)( Pressure(MyGreatComponent) );
+```
+
 If you have any doubt/recommendation you can write me or any trouble you can create a new thread on the [issues](https://github.com/rubcuadra/react-pressure/issues) area of the repository
