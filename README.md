@@ -106,3 +106,7 @@ export default connect(mapStateToProps,mapDispatchToProps)( Pressure(MyGreatComp
 ```
 
 If you have any doubt/recommendation you can write me or any trouble you can create a new thread on the [issues](https://github.com/rubcuadra/react-pressure/issues) area of the repository
+
+#LIVE EXAMPLE:
+
+[Pressure Cubes](http://rubcuadra.github.io/pressure-cubes/): React & Three.js videogame that implements 3D touch to avoid cubes
