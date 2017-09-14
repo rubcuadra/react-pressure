@@ -23,7 +23,7 @@ export default function(ComposedComponent, configs=null){
 				configs.only = configs.only?configs.only:(isMobile()?"touch":null)
 			else 
 				configs = {only:isMobile()?"touch":null};
-
+			
 			Pressure.set( this.refs.press, {
 				start:(event)=>{
 					this.setState({pressing:true});
