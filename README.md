@@ -1,6 +1,6 @@
 <!-- Name -->
 <h1 align="center">
-  <a href="https://pressurejs.com/">React-Pressure.js (unofficial)</a>
+  <a href="https://pressurejs.com/">React-Pressure.js</a>
 </h1>
 
 If you want to implement 3D touch on your react component this is the module for you
@@ -106,6 +106,8 @@ export default connect(mapStateToProps,mapDispatchToProps)( Pressure(MyGreatComp
 ```
 
 If you have any doubt/recommendation you can write me or any trouble you can create a new thread on the [issues](https://github.com/rubcuadra/react-pressure/issues) area of the repository
+#ISSUES:
+0.1.2 The latest realese of pressure.js has a weird bug in some Android devices, this new realese of react-pressure has a hotfix while the core code is upgraded, if you don't pass a configuration object then the HOC will try to guess if you are using a mobile phone, if it is de case then it uses the only:"touch", else it continues with the default configurations. 09/12/2017
 
 #LIVE EXAMPLE:
 
