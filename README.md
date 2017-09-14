@@ -85,7 +85,7 @@ By default all components have the configuration:
 {
   polyfill: true,
   polyfillSpeedUp: 1000,
-  polyfillSpeedDown: 0,
+  polyfillSpeedDown: 1000,
   preventSelect: true,
   only: null
 }
