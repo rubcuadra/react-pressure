@@ -19,13 +19,10 @@ function isMobile() {
 export default function(ComposedComponent, configs=null){
 	class Pressurer extends Component{
 		componentDidMount(){
-			const defaultConfig = {
-			  polyfill: true,
-			  polyfillSpeedUp: 1000,
-			  polyfillSpeedDown: 1000,
-			  preventSelect: true,
-			  only: isMobile()?"touch":null
-			}
+			if (configs) //Hot fix for some androids with chrome
+				configs.only = configs.only?configs.only:(isMobile()?"touch":null)
+			else 
+				configs = {only:isMobile()?"touch":null};
 
 			Pressure.set( this.refs.press, {
 				start:(event)=>{
@@ -41,7 +38,7 @@ export default function(ComposedComponent, configs=null){
 					if(configs.debug) console.warn("react-pressure: Unsupported device, verify 'only' devices");
 					this.setState({force:0, pressing:false});
 				}
-			}, configs?configs:defaultConfig); 
+			}, configs); 
 		}
 
 		constructor(props){
