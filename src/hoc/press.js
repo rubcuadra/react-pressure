@@ -9,8 +9,14 @@ import Pressure from 'pressure';
 //   preventSelect: true,
 //   only: null|'touch'|'mouse'|'pointer'
 // }
+function isMobile() {
+  const testExp = new RegExp('Android|webOS|iPhone|iPad|' +
+                  'BlackBerry|Windows Phone|'  +
+                  'Opera Mini|IEMobile|Mobile','i');
+  return testExp.test(navigator.userAgent);
+}
+
 export default function(ComposedComponent, configs=null){
-	
 	class Pressurer extends Component{
 		componentDidMount(){
 			Pressure.set( this.refs.press, {
@@ -27,7 +33,7 @@ export default function(ComposedComponent, configs=null){
 					if(configs.debug) console.warn("react-pressure: Unsupported device, verify 'only' devices");
 					this.setState({force:0, pressing:false});
 				}
-			}, configs?configs:{}); 
+			}, configs?configs:{ only:isMobile()?'touch':null }); 
 		}
 
 		constructor(props){
